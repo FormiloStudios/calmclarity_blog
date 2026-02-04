@@ -1,19 +1,31 @@
-import { Navigation } from "@/components/Navigation";
-import { Hero } from "@/components/Hero";
-import { ArticleFeed } from "@/components/ArticleFeed";
-
 export default function Home() {
     return (
-        <main className="bg-black min-h-screen">
-            <Navigation />
-            <Hero />
-            <ArticleFeed />
+        <div className="min-h-screen bg-black flex flex-col">
+            {/* Header */}
+            <header className="w-full bg-black border-b border-zinc-800 py-4 px-8">
+                <h1 className="text-xl font-bold tracking-tight">Calm Clarity</h1>
+            </header>
+
+            {/* Hero Section */}
+            <section className="w-full bg-zinc-900 py-32 px-8 flex flex-col items-center justify-center text-center">
+                <h2 className="text-4xl md:text-6xl font-bold text-white">
+                    Quiet Minds. Sharper Focus.
+                </h2>
+            </section>
+
+            {/* Article Feed - Placeholder Blocks */}
+            <main className="flex-grow container mx-auto py-20 px-8">
+                <div className="flex flex-col gap-12">
+                    <div className="w-full h-80 bg-zinc-800 rounded-lg"></div>
+                    <div className="w-full h-80 bg-zinc-800 rounded-lg"></div>
+                    <div className="w-full h-80 bg-zinc-800 rounded-lg"></div>
+                </div>
+            </main>
 
             {/* Footer */}
-            <footer className="py-12 text-center text-neutral-600 text-sm font-light">
-                <p>© 2026 Calm Clarity. All rights reserved.</p>
-                <p className="opacity-10 text-[10px] mt-2">v0.1.2-luxury-build</p>
+            <footer className="py-10 text-center text-zinc-600 border-t border-zinc-800">
+                <p>© 2026 Calm Clarity</p>
             </footer>
-        </main>
+        </div>
     );
 }
