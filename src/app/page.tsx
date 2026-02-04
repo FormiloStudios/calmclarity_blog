@@ -12,6 +12,7 @@ export default function Home() {
             {/* Footer */}
             <footer className="py-12 text-center text-neutral-600 text-sm font-light">
                 <p>© 2026 Calm Clarity. All rights reserved.</p>
+                <p className="opacity-10 text-[10px] mt-2">v0.1.2-luxury-build</p>
             </footer>
         </main>
     );
