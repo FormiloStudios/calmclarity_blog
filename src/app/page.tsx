@@ -1,59 +1,76 @@
 export default function Home() {
     return (
-        <div className="min-h-screen relative overflow-hidden bg-[#020202] font-sans selection:bg-indigo-500/30">
+        <div className="min-h-screen relative overflow-hidden bg-[#050505] font-sans selection:bg-indigo-500/30 text-white">
 
-            {/* 1. The Atmosphere: "Aura" Gradient */}
-            <div className="fixed top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#1A1A2E] opacity-20 blur-[120px] rounded-full pointer-events-none z-0" />
+            {/* 3. The Atmosphere: Soft Indigo Glow */}
+            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[rgba(79,70,229,0.1)] blur-[120px] rounded-full pointer-events-none z-0" />
 
-            {/* 3. The Navigation */}
-            <header className="fixed top-0 w-full z-50 flex items-center justify-between px-8 py-8 md:px-16 mix-blend-difference">
-                <div className="text-sm tracking-widest font-medium uppercase text-white/90">
-                    Calm Clarity
-                </div>
-                <nav className="flex gap-8 text-sm tracking-wide font-light text-white/80">
-                    <a href="#" className="hover:text-white transition-colors duration-300">Protocols</a>
-                    <a href="#" className="hover:text-white transition-colors duration-300">The Lab</a>
-                </nav>
-            </header>
+            {/* Main Container */}
+            <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 flex flex-col min-h-screen">
 
-            {/* 2. The Typography: Hero Section */}
-            <section className="relative z-10 w-full pt-[25vh] pb-32 px-8 flex flex-col items-center justify-center text-center">
-                <h2 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white tracking-tight leading-[1.1] opacity-90 max-w-5xl">
-                    Quiet Minds.<br />
-                    <span className="text-white/80">Sharper Focus.</span>
-                </h2>
-            </section>
+                {/* 2. The Header Reset */}
+                <header className="w-full flex items-center justify-between py-8">
+                    <div className="text-sm font-medium tracking-wide text-white/90">
+                        Calm Clarity
+                    </div>
+                    <nav className="flex gap-8 text-sm font-medium text-white/90">
+                        <a href="#" className="hover:text-white/60 transition-colors duration-300">Protocols</a>
+                        <a href="#" className="hover:text-white/60 transition-colors duration-300">The Lab</a>
+                    </nav>
+                </header>
 
-            {/* Article Feed - Styled Semantic Blocks */}
-            <main className="relative z-10 container mx-auto px-6 md:px-12 max-w-4xl flex flex-col gap-24 pb-32">
+                {/* 1. The Center Alignment & 4. Editorial Styling */}
+                <main className="flex-grow flex flex-col items-center pt-[15vh]">
 
-                {/* Article Block 1 */}
-                <article className="group cursor-pointer">
-                    <div className="w-full aspect-[16/9] bg-neutral-900/30 border border-white/5 transition-colors duration-500 group-hover:border-white/10 group-hover:bg-neutral-900/50 mb-6" />
-                    <h3 className="font-serif text-3xl md:text-4xl text-white/90 group-hover:text-white transition-colors">The Architecture of Silence</h3>
-                    <p className="mt-2 text-neutral-500 font-light tracking-wide text-sm uppercase">Cognitive Design</p>
-                </article>
+                    {/* Main Headline */}
+                    <h1 className="text-center font-serif font-bold text-5xl md:text-7xl lg:text-8xl leading-[1.1] tracking-tight text-white/95">
+                        Quiet Minds.<br />
+                        Sharper Focus.
+                    </h1>
 
-                {/* Article Block 2 */}
-                <article className="group cursor-pointer">
-                    <div className="w-full aspect-[16/9] bg-neutral-900/30 border border-white/5 transition-colors duration-500 group-hover:border-white/10 group-hover:bg-neutral-900/50 mb-6" />
-                    <h3 className="font-serif text-3xl md:text-4xl text-white/90 group-hover:text-white transition-colors">Analog Rituals</h3>
-                    <p className="mt-2 text-neutral-500 font-light tracking-wide text-sm uppercase">Productivity</p>
-                </article>
+                    {/* Tagline */}
+                    <div className="mt-8 text-[10px] md:text-xs font-bold tracking-[0.2em] text-indigo-200/50 uppercase">
+                        Nervous System Regulation Protocols
+                    </div>
 
-                {/* Article Block 3 */}
-                <article className="group cursor-pointer">
-                    <div className="w-full aspect-[16/9] bg-neutral-900/30 border border-white/5 transition-colors duration-500 group-hover:border-white/10 group-hover:bg-neutral-900/50 mb-6" />
-                    <h3 className="font-serif text-3xl md:text-4xl text-white/90 group-hover:text-white transition-colors">Monochrome Thinking</h3>
-                    <p className="mt-2 text-neutral-500 font-light tracking-wide text-sm uppercase">Philosophy</p>
-                </article>
+                    {/* Article Feed - Minimalist Placeholders */}
+                    <div className="w-full mt-32 flex flex-col gap-16 pb-32">
+                        {/* Article 1 */}
+                        <div className="group cursor-pointer">
+                            <div className="w-full h-80 bg-zinc-900/40 border border-white/5 rounded-sm transition-all duration-500 group-hover:bg-zinc-900/60 group-hover:border-white/10" />
+                            <div className="mt-6 flex justify-between items-baseline">
+                                <h3 className="font-serif text-2xl text-white/90 group-hover:text-white transition-colors">The Architecture of Silence</h3>
+                                <span className="text-[10px] tracking-widest text-neutral-500 uppercase">Read</span>
+                            </div>
+                        </div>
 
-            </main>
+                        {/* Article 2 */}
+                        <div className="group cursor-pointer">
+                            <div className="w-full h-80 bg-zinc-900/40 border border-white/5 rounded-sm transition-all duration-500 group-hover:bg-zinc-900/60 group-hover:border-white/10" />
+                            <div className="mt-6 flex justify-between items-baseline">
+                                <h3 className="font-serif text-2xl text-white/90 group-hover:text-white transition-colors">Analog Rituals</h3>
+                                <span className="text-[10px] tracking-widest text-neutral-500 uppercase">Read</span>
+                            </div>
+                        </div>
 
-            {/* Footer */}
-            <footer className="relative z-10 py-12 text-center text-neutral-800 text-xs font-light tracking-widest uppercase">
-                © 2026 Calm Clarity. Verified Build.
-            </footer>
+                        {/* Article 3 */}
+                        <div className="group cursor-pointer">
+                            <div className="w-full h-80 bg-zinc-900/40 border border-white/5 rounded-sm transition-all duration-500 group-hover:bg-zinc-900/60 group-hover:border-white/10" />
+                            <div className="mt-6 flex justify-between items-baseline">
+                                <h3 className="font-serif text-2xl text-white/90 group-hover:text-white transition-colors">Monochrome Thinking</h3>
+                                <span className="text-[10px] tracking-widest text-neutral-500 uppercase">Read</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                {/* Footer - Minimal */}
+                <footer className="py-8 text-center border-t border-white/5">
+                    <p className="text-[10px] tracking-widest text-neutral-600 uppercase">© 2026 Calm Clarity. Verified Build 0.2</p>
+                </footer>
+
+            </div>
         </div>
     );
 }
