@@ -20,7 +20,7 @@ export function Hero() {
             {/* Content */}
             <div className="relative z-10 flex h-full w-full flex-col items-center justify-center p-4 text-center">
                 <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white tracking-tight leading-tight mix-blend-overlay opacity-90">
-                    Quiet Minds.<br />
+                    VERIFIED: Quiet Minds.<br />
                     Sharper Focus.
                 </h1>
             </div>
